@@ -22,7 +22,7 @@ jQueryリッチテキストエディタのbootstrap-wysiwygから受け取った
 	* [LGPL v2.1+](http://www.gnu.org/licenses/lgpl.html)
 	* 2014年5月現在最新版
 
-* ImageSaver
+* [Base64ImageSaver](https://github.com/Tak0002/Base64ImageSaver-PHP)
 	* Base64形式の画像が含まれるHTMLから画像を抽出し、外部ファイルに画像を保存し、HTML中のBASE64形式の画像を外部ファイルにURLを置換。
 	* Tak0002自身により作成
 	* The MIT License (MIT)
