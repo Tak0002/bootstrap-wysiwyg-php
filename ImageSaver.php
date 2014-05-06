@@ -53,6 +53,9 @@ class ImageSaver
      */
     private function baseToFile($base64Image){
         $extension = explode(';', $base64Image , 2)[0];
+        if(!in_array($extension, array('jpeg','png','gif','bmp'))){
+            throw new Exception();
+        }
         $base64Image = explode(',', $base64Image , 2)[1];
         $filename = $this->saveURL . time() . $this->number . '.' . $extension;
         file_put_contents($filename, base64_decode(str_replace(' ', '+', $base64Image)));
